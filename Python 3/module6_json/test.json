@@ -1,0 +1,11 @@
+{
+    "name" : "marouane",
+    "phone" :{
+        "type" : "intl",
+        "number" : "+21267846237"
+    },
+    "email" : {
+        "hide" : "yes"
+    }
+    
+}

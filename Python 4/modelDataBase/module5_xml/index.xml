@@ -1,0 +1,84 @@
+<!-- 1) XML structure-->
+
+-XML is language like HTML data structure
+
+-serialize/ de-seralize ⇒ convert data in one proogramme into a commun format can be stored and transforme
+between system in a different programme language XML Document
+
+<people> <!-- start tag-->
+    <!-- elements or nodes-->
+    <!--complex element  1(persone)-->
+    <persone>
+        <firstName type="int">Marouane</firstName> <!--simple element-->
+        <lastName>Dbibih</lastName> <!--simple element-->
+        <phone>09878867887</phone>
+        <email kdk@mmm.com/> <!--self close tag-->
+    </persone>
+    <!--complex element 2(persone)-->
+    <persone>
+        <firstName>Marouane</firstName> <!--simple element-->
+        <lastName>Dbibih</lastName> <!--simple element-->
+    </persone>
+</people> <!--end tag-->
+
+<!-- help system to share structured data -->
+<!--Standar Generalized Markup Language (SGML)-->
+
+<!--XML Schema Constraints-->
+
+-XML Schema constraints 
+Some rules and structure definition about XML correct forma send to XML Validator for validation 
+the XML document(acte of verifying the data is a right format)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE people SYSTEM "people.dtd">
+<people>
+  <persone>
+    <firstName type="int" minOccurs="1" maxOccurs="1">TEXT</firstName>
+    <lastName minOccurs="1" maxOccurs="1">TEXT</lastName>
+    <phone minOccurs="0" maxOccurs="1">TEXT</phone>
+    <email minOccurs="0" maxOccurs="1">TEXT</email>
+  </persone>
+  <persone>
+    <firstName minOccurs="1" maxOccurs="1">TEXT</firstName>
+    <lastName minOccurs="1" maxOccurs="1">TEXT</lastName>
+  </persone>
+</people>
+
+<!--XML Schema from W3S (XSD)-->
+<persone>
+    <firstName>Marouane</firstName> 
+    <lastName>Dbibih</lastName>
+    <child_name>A</child_name> 
+    <child_name>B</child_name> 
+    <child_name>C</child_name> 
+    <child_name>D</child_name> 
+    <age>Dbibih</age> 
+</persone>
+
+<xs:complexType name="firstNmae"> <!--xs complex type-->
+    <xs:sequence> <!--xs saquence-->
+        <xs:element name="firstName"  type="xs:string" /> <!--xs element-->
+        <xs:element name="lastName"  type="xs:string" />  <!--xs element-->
+        <xs:element name="age"  type="xs:integer" />  <!--xs element-->
+
+        minOccurs="0" maxOccurs="4" how many tag you can cardinalite
+        <xs:element  name="child_name" type="xs:string" minOccurs="0" maxOccurs="4" />
+
+    </xs:sequence>
+</xs:complexType >
+
+<!--Type of data-->
+string
+integer
+date 2023-12-31
+dateTime  2023-12-31T09:30:10Z <!-- T & Z are time zone-->
+    2023-12-31 <!--year/mounth/day-->
+    09:30:10 <!--secd:min:hour-->
+decimale ==> float
+
+
+
+
+
+

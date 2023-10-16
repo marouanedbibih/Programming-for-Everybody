@@ -1,0 +1,28 @@
+[
+    {
+        "id" : "01",
+        "fisrt_name" : "marouane",
+        "last_name" : "dbibih",
+        "phone" : {
+            "type" : "intl",
+            "number" : "0948309"
+        },
+        "email" : {
+            "hide" : "yes",
+            "mail" : "marouane@gmail.com"
+        }
+    },
+    {
+        "id" : "02",
+        "fisrt_name" : "abdessamade",
+        "last_name" : "dbibih",
+        "phone" : {
+            "type" : "intl",
+            "number" : "89579834"
+        },
+        "email" : {
+            "hide" : "yes",
+            "mail" : "abdessamade@gmail.com"
+        }
+    }
+]
